@@ -6206,6 +6206,10 @@ async function runQwenServeImpl(
         ...(provenance === 'live-conversation'
           ? {
               notifySentCompletion: true,
+              getStandaloneSessionService: () =>
+                (runtimeApp ?? runtimeAppForCleanup)?.locals?.[
+                  'standaloneSessionService'
+                ],
               isolatedWorkspace: {
                 materializeDirectory: (sessionId: string) =>
                   liveConversationWorkspace.materializeConversationDirectory(
