@@ -1,0 +1,90 @@
+[
+  {
+    "mutation": "M2-unloadSkills-noop",
+    "file": "packages/core/src/tools/skill.ts",
+    "suites": [
+      "src/tools/skill.test.ts",
+      "src/tools/skill-utils.test.ts",
+      "src/services/microcompaction/microcompact.test.ts",
+      "src/services/memoryPressureMonitor.test.ts",
+      "src/core/geminiChat.test.ts"
+    ],
+    "exit": 1,
+    "tests_failed": 1,
+    "killed": true,
+    "sample_failures": [
+      "FAIL  src/tools/skill.test.ts > SkillTool > SkillToolInvocation > unloadSkills re-arms dedup only for the given names"
+    ]
+  },
+  {
+    "mutation": "M3-strip-untrack-removed",
+    "file": "packages/core/src/core/geminiChat.ts",
+    "suites": [
+      "src/core/geminiChat.test.ts",
+      "src/core/client.test.ts"
+    ],
+    "exit": 1,
+    "tests_failed": 1,
+    "killed": true,
+    "sample_failures": [
+      "FAIL  src/core/geminiChat.test.ts > GeminiChat > history-rewrite loaded-skill tracking > strip un-tracks only the skill body it removes"
+    ]
+  },
+  {
+    "mutation": "M4-keptSkillNames-empty",
+    "file": "packages/core/src/services/microcompaction/microcompact.ts",
+    "suites": [
+      "src/services/microcompaction/microcompact.test.ts",
+      "src/core/geminiChat.test.ts"
+    ],
+    "exit": 1,
+    "tests_failed": 3,
+    "killed": true,
+    "sample_failures": [
+      "FAIL  src/services/microcompaction/microcompact.test.ts > microcompactHistory evictedSkillNames (issue #6762 sync) > suppresses the report when a blanked body has a kept sibling body (R1-9)",
+      "FAIL  src/services/microcompaction/microcompact.test.ts > microcompactHistory evictedSkillNames (issue #6762 sync) > does not let a marker-spoofed kept result suppress a body eviction (R3-1)",
+      "FAIL  src/services/microcompaction/microcompact.test.ts > microcompactHistory evictedSkillNames (issue #6762 sync) > suppresses the report on the size path when a sibling body survives via the low watermark (R3-10)"
+    ]
+  },
+  {
+    "mutation": "M5-hook-dedup-removed",
+    "file": "packages/core/src/hooks/registerSkillHooks.ts",
+    "suites": [
+      "src/hooks/registerSkillHooks.test.ts"
+    ],
+    "exit": 1,
+    "tests_failed": 1,
+    "killed": true,
+    "sample_failures": [
+      "FAIL  src/hooks/registerSkillHooks.test.ts > registerSkillHooks > should not duplicate hooks when the same skill registers again (skill reload)"
+    ]
+  },
+  {
+    "mutation": "M6-permission-dedup-removed",
+    "file": "packages/core/src/permissions/permission-manager.ts",
+    "suites": [
+      "src/permissions/permission-manager.test.ts"
+    ],
+    "exit": 1,
+    "tests_failed": 1,
+    "killed": true,
+    "sample_failures": [
+      "FAIL  src/permissions/permission-manager.test.ts > PermissionManager > session rules > addSessionAllowRule deduplicates identical rules"
+    ]
+  },
+  {
+    "mutation": "M7-forkedChat-guard-removed",
+    "file": "packages/core/src/core/geminiChat.ts",
+    "suites": [
+      "src/agents/forkedAgent.cache.test.ts",
+      "src/core/geminiChat.test.ts"
+    ],
+    "exit": 1,
+    "tests_failed": 2,
+    "killed": true,
+    "sample_failures": [
+      "FAIL  src/core/geminiChat.test.ts > GeminiChat > tryCompress loaded-skill tracking > leaves skill tracking untouched for forked chats sharing the parent registry",
+      "FAIL  src/core/geminiChat.test.ts > GeminiChat > sendMessageStream hard-tier rescue > hard-rescue restore leaves the shared tracker untouched for a forked chat (R1-12)"
+    ]
+  }
+]

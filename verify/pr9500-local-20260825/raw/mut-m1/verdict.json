@@ -1,0 +1,11 @@
+{
+  "arm": "mutM1-auto",
+  "mode": "auto",
+  "requests": 9,
+  "probe1_first_seen": "[{\"type\":\"text\",\"text\":\"Base directory for this skill: /private/tmp/claude-501/-Users-wenshao-git-qwen-code-x3/af487a97-",
+  "probe1_in_last_request": "[{\"type\":\"text\",\"text\":\"[Old tool result content cleared]\"}]",
+  "probe1_body_evicted": true,
+  "probe2_content": "[{\"type\":\"text\",\"text\":\"Skill \\\"demo-skill\\\" is already loaded in context.\"}]",
+  "probe2_returned_full_body": false,
+  "probe2_returned_already_loaded": true
+}

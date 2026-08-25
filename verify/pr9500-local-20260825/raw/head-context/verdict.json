@@ -1,0 +1,11 @@
+{
+  "arm": "head-context",
+  "mode": "context",
+  "requests": 9,
+  "probe1_first_seen": "[{\"type\":\"text\",\"text\":\"Base directory for this skill: /private/tmp/claude-501/-Users-wenshao-git-qwen-code-x3/af487a97-",
+  "probe1_in_last_request": "[{\"type\":\"text\",\"text\":\"[Old tool result content cleared]\"}]",
+  "probe1_body_evicted": true,
+  "probe2_content": "[{\"type\":\"text\",\"text\":\"Base directory for this skill: /private/tmp/claude-501/-Users-wenshao-git-qwen-code-x3/af487a97-f8f6-46d0-ad9e-6b33f9b08f58/scratchpad/fx-ctx-head/.qwen/skills/demo-skill\\nImportant: ALWAYS resolve absolute paths from this base directory when working with skills.\\n\\n# Demo Skill\\n\\nMARKER-DEMO-SKILL-BODY-7F3A\\n\\nStep 1: announce the marker above.\\nStep 2: do nothing else.\\n\"}]",
+  "probe2_returned_full_body": true,
+  "probe2_returned_already_loaded": false
+}

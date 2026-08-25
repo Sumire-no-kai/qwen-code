@@ -1,0 +1,29 @@
+
+   ▄▄▄▄▄▄  ▄▄     ▄▄ ▄▄▄▄▄▄▄ ▄▄▄    ▄▄   ┌──────────────────────────────────────────────────────────┐
+  ██╔═══██╗██║    ██║██╔════╝████╗  ██║  │ >_ Qwen Code (v0.22.0)                                   │
+  ██║   ██║██║ █╗ ██║█████╗  ██╔██╗ ██║  │                                                          │
+  ██║▄▄ ██║██║███╗██║██╔══╝  ██║╚██╗██║  │ API Key | fake-model (/model to change)                  │
+  ╚██████╔╝╚███╔███╔╝███████╗██║ ╚████║  │ /private/.../scratchpad/fx-ctl-head                      │
+   ╚══▀▀═╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═══╝  └──────────────────────────────────────────────────────────┘
+
+  Tips: Add a QWEN.md file to give Qwen Code persistent project context.
+  ●︎ Extensions changed on disk. Run /reload-plugins to apply updates.
+  ●︎ Read context files: home/.qwen/output-language.md
+
+  > PROBE1 load the demo skill
+  ✓ Skill Use skill: "demo-skill"
+    Deterministic fixture skill used to verify loaded-skill eviction sync.
+
+  ◆︎ TOOL-RESULT-ACK
+
+  > PROBE2 load the demo skill again
+  ✓ Skill Use skill: "demo-skill"
+    Skill "demo-skill" is already loaded in context.
+
+  ◆︎ TOOL-RESULT-ACK
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+*   Type your message or @path/to/file
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ➜ fx-ctl-head · fake-model
+  YOLO mode (shift + tab to cycle)

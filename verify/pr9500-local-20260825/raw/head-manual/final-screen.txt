@@ -1,0 +1,34 @@
+  ██║   ██║██║ █╗ ██║█████╗  ██╔██╗ ██║  │                                                          │
+  ██║▄▄ ██║██║███╗██║██╔══╝  ██║╚██╗██║  │ API Key | fake-model (/model to change)                  │
+  ╚██████╔╝╚███╔███╔╝███████╗██║ ╚████║  │ /private/.../scratchpad/fx-man-head                      │
+   ╚══▀▀═╝  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═══╝  └──────────────────────────────────────────────────────────┘
+
+  Tips: Type / to open the command popup; Tab autocompletes slash commands and saved prompts.
+  ●︎ Extensions changed on disk. Run /reload-plugins to apply updates.
+  ●︎ Read context files: home/.qwen/output-language.md
+
+  > PROBE1 load the demo skill
+  ✓ Skill Use skill: "demo-skill"
+    Deterministic fixture skill used to verify loaded-skill eviction sync.
+
+  ◆︎ TOOL-RESULT-ACK
+
+  > FILLER read the filler file
+  ✓ Read data/filler.txt
+
+  ◆︎ TOOL-RESULT-ACK
+
+  > /compress-fast
+  ◆︎ Chat history compressed from 1000 to 916 tokens.
+
+  > PROBE2 load the demo skill again
+  ✓ Skill Use skill: "demo-skill"
+    Deterministic fixture skill used to verify loaded-skill eviction sync.
+
+  ◆︎ TOOL-RESULT-ACK
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+*   Type your message or @path/to/file
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ➜ fx-man-head · fake-model
+  YOLO mode (shift + tab to cycle)

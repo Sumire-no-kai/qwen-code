@@ -1,0 +1,34 @@
+  │    └ computer_use__get_agent_curso…              3 tokens                                             │
+  │    └ computer_use__get_recording_s…              3 tokens                                             │
+  │    └ computer_use__kill_app                      3 tokens                                             │
+  │    └ cron_delete                                 3 tokens                                             │
+  │    └ task_stop                                   3 tokens                                             │
+  │    └ computer_use__get_screen_size               2 tokens                                             │
+  │    └ cron_list                                   2 tokens                                             │
+  │    └ computer_use__get_config                    1 tokens                                             │
+  │    └ computer_use__get_cursor_posi…              1 tokens                                             │
+  │                                                                                                       │
+  │  Memory files                                                                                         │
+  │    └ auto memory                                35 tokens                                             │
+  │    └ home/.qwen/output-language.md               6 tokens                                             │
+  │                                                                                                       │
+  │  Skills                                                                                               │
+  │    └ extension-creator                           4 tokens                                             │
+  │    └ review                                      4 tokens                                             │
+  │    └ qc-helper                                   3 tokens                                             │
+  │    └ simplify                                    3 tokens                                             │
+  │    └ batch                                       2 tokens                                             │
+  │    └ coordinate                                  2 tokens                                             │
+  │    └ loop                                        2 tokens                                             │
+  │    └ new-app                                     2 tokens                                             │
+  │    └ stuck                                       2 tokens                                             │
+  │    └ dataviz                                     1 tokens                                             │
+  │    └ demo-skill                                  1 tokens                                             │
+  │                                                                                                       │
+  ╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+*   Type your message or @path/to/file
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ➜ fx-ctx-head · fake-model
+  YOLO mode (shift + tab to cycle)
